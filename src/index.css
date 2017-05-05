@@ -2,43 +2,123 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: lightgray
+  background-color: gray; 
+}
+header{
+  background-color: green;
+  margin-bottom: 1em;
 }
 
-h2{
-  text-align: center;
+header > a > img{
+  padding-left: 0.4em;
+  padding-top: 0.4em;
+  height: 1.5em;
 }
 
 table{
-  margin: auto;
-}
-.boxContainer{
-
-}
-
-.boxId {
-}
-
-.boxImg{
- 
-}
-
-.boxUsername{
-
-}
-
-.boxRecent{
-
-}
-
-.boxAlltime{
-
-}
-
-.boxLastUpdate{
-
-}
-
-.footerDiv{
+  margin: 1em auto;
   text-align: center;
+  border: solid black 1px;
+  border-collapse: collapse;
 }
+
+table > caption{
+  padding: 0.2em;
+font-size: 1.3em;
+background-color: green;
+color: white;
+border-radius: 5px 5px 0 0 ; 
+}
+th, td {
+  font-size: 0.9em;
+  padding: 0.35em;
+  border: 1px solid black;
+}
+th{
+  background-color: lightgray;
+  text-align: left;
+}
+
+th > span{
+border-bottom: 1.9px solid green;
+}
+
+#thRecent:hover, #thAlltime:hover{
+color: green;
+}
+
+#thRecent{
+
+}
+
+#thAlltime{
+
+}
+tr:nth-child(odd) {background-color: #f2f2f2}
+tr:nth-child(even) {background-color: #d9d9d9}
+
+.row{
+
+}
+
+.pos {
+width: 2em;
+}
+
+.user{
+text-align: left;
+width: 20vw;
+}
+.user > a {
+  text-decoration: none;
+  color: steelblue;
+  font-size: 0.9em;
+}
+.user > a:visited {
+  color: steelblue;
+}
+.user > a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid steelblue;
+}
+
+.img{
+vertical-align: middle;
+border-color: green;
+border: 2px solid green;
+border-radius: 4px;
+}
+
+.recent{
+width: 15vw;
+  
+}
+
+.alltime{
+width: 15vw;
+}
+
+
+footer{
+  padding: 0.4em;
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+
+
+footer > a{
+  color: white;
+  text-decoration: none;
+}
+footer > a:hover{
+  text-decoration: underline;
+}
+
+/*
+link 
+visited
+hover
+focus
+active
+*/

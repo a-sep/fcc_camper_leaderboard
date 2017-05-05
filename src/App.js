@@ -23,23 +23,28 @@ class App extends React.Component {
     let recentUsers = this.state.recentUsers
     let alltimeUsers = this.state.alltimeUsers
     console.log('render', recentUsers, alltimeUsers)
+    console.log("I am a \"double quote\" string inside \"double quotes\".");
     return (
       <div>
-        <Header>Leaderboard</Header>
+        <Header />
         <table>
-          <tr>
-            <th>#</th><th>Camper Name</th><th>Points in last 30 days</th><th>All time points</th>
-          </tr>
-          {recentUsers.map((item, i) =>
-            <tr className="">
-              <td className="">{i + 1}</td>
-              <td className=""><img className="" src={item.img} width="25px" height="25px" />{item.username}</td>
-              <td className="">{item.recent}</td>
-              <td className="">{item.alltime}</td>
+          <caption>Leaderboard</caption>
+          <thead>
+            <tr>
+              <th>#</th><th>Camper Name</th><th id="thRecent" ><span> Points in last 30 days</span></th><th id="thAlltime"><span> All time points</span></th>
             </tr>
-
-          )
-          }
+          </thead>
+          <tbody>
+            {recentUsers.map((item, i) =>
+              <tr className="row">
+                <td className="pos">{i + 1}</td>
+                <td className="user"><img className="img" src={item.img} width="30px" height="30px" /> <a href={"https://www.freecodecamp.com/" + item.username}>{item.username}</a> </td>
+                <td className="recent">{item.recent}</td>
+                <td className="alltime">{item.alltime}</td>
+              </tr>
+            )
+            }
+          </tbody>
         </table>
         <Footer />
       </div>
@@ -47,7 +52,7 @@ class App extends React.Component {
   }
 }
 
-const Header = (props) => <h2>{props.children}</h2>
-const Footer = () => <div className="footerDiv">coded by <a href="http://codepen.io/artur_sep/full/LNRxVP/"> <strong>artur_sep</strong></a></div>
+const Header = () => <header><a href="https://www.freecodecamp.com"><img src="https://www.freecodecamp.com/design-style-guide/img/freeCodeCamp.svg" alt="logo freeCodecamp"/></a></header>
+const Footer = () => <footer>coded by <a href="http://codepen.io/artur_sep/full/LNRxVP/"> <strong>artur_sep</strong></a></footer>
 
 export default App;
