@@ -40,26 +40,17 @@ th{
 }
 
 th > span{
-border-bottom: 1.9px solid green;
+border-bottom: 1.5px solid green;
+cursor: crosshair;
 }
 
 #thRecent:hover, #thAlltime:hover{
 color: green;
 }
 
-#thRecent{
-
-}
-
-#thAlltime{
-
-}
 tr:nth-child(odd) {background-color: #f2f2f2}
 tr:nth-child(even) {background-color: #d9d9d9}
 
-.row{
-
-}
 
 .pos {
 width: 2em;
