@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => <header><a href="https://www.freecodecamp.com"><img src="https://www.freecodecamp.com/design-style-guide/img/freeCodeCamp.svg" alt="logo freeCodecamp" /></a></header>
+const Header = () => <header><a href="https://www.freecodecamp.com" target="_blank"><img src="https://www.freecodecamp.com/design-style-guide/img/freeCodeCamp.svg" alt="logo freeCodecamp" /></a></header>
 const Footer = () => <footer>coded by <a href="http://codepen.io/artur_sep/full/LNRxVP/"> <strong>artur_sep</strong></a></footer>
 
 class App extends React.Component {
