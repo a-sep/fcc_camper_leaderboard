@@ -44,7 +44,7 @@ class App extends React.Component {
     let tbodyObj = this.state.temp.map((item, i) =>
       <tr className="row" key={item.username}>
         <td className="pos">{i + 1}</td>
-        <td className="user"><img className="img" src={item.img} width="30px" height="30px" alt="" /> <a href={"https://www.freecodecamp.com/" + item.username}>{item.username}</a> </td>
+        <td className="user"><img className="img" src={item.img} width="30px" height="30px" alt="" /> <a href={"https://www.freecodecamp.com/" + item.username} target="_blank">{item.username} </a> </td>
         <td className="recent">{item.recent}</td>
         <td className="alltime">{item.alltime}</td>
       </tr>
